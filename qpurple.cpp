@@ -77,6 +77,8 @@ namespace QPurple {
     qt_write_conv(PurpleConversation *conv, const char *who, const char *alias,
                             const char *message, PurpleMessageFlags flags, time_t mtime)
     {
+        Q_UNUSED(alias)
+        Q_UNUSED(flags)
             printf("(%s) %s %s: %s\n", purple_conversation_get_name(conv),
                             purple_utf8_strftime("(%H:%M:%S)", localtime(&mtime)),
                             who, message);

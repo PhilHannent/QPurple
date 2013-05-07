@@ -9,7 +9,9 @@ TEMPLATE = lib
 DEFINES += QPURPLE_LIBRARY
 unix:INCLUDEPATH += /usr/include/glib-2.0 \
     /usr/lib/glib-2.0/include \
-    /usr/include/libpurple
+    /usr/include/libpurple \
+    ../pidgin-main/libpurple \
+    /usr/lib/x86_64-linux-gnu/glib-2.0/include/
 unx:LIBS += -lglib-2.0 \
     -lpurple
 SOURCES += qpurple.cpp \
